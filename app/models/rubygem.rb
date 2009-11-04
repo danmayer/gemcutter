@@ -66,6 +66,11 @@ class Rubygem < ActiveRecord::Base
     versions.latest.try(:to_title) || name
   end
 
+  def metrics_link(project_path)
+    project_url = CGI.escape(project_path)
+    "http://devver.net/caliper/project?repo=#{project_url}"
+  end
+
   def to_json
     {:name              => name,
      :downloads         => downloads,
