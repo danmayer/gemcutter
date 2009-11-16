@@ -1,0 +1,9 @@
+file_globs_to_ignore: ---
+- lib/rubygems/**/*
+
+#directories_to_calculate: ---
+#- app_2
+#- odd_directory
+
+#test_directories_to_calculate: ---
+#- test/weird
